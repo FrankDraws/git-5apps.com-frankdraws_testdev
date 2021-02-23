@@ -91,3 +91,41 @@ a,
   color: #a3a3a3;
   font-size: 1em;
 }
+#colortop {
+    width: 100vw;
+    height: 12px;
+    -webkit-animation: color-change-3x 4s linear infinite alternate both;
+    animation: color-change-3x 4s linear infinite alternate both;
+}
+
+
+@-webkit-keyframes color-change-3x {
+    0% {
+        background: #ff930f;
+    }
+
+    50% {
+        background: #7303C0;
+    }
+
+    100% {
+        background: #00ff87;
+    }
+
+}
+
+@keyframes color-change-3x {
+    0% {
+        background: #ff930f;
+        /*#03001E*/
+    }
+
+    50% {
+        background: #7303C0;
+    }
+
+    100% {
+        background: #00ff87;
+    }
+
+}

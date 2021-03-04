@@ -1,0 +1,13 @@
+{
+    "name": "testdev",
+    "description": "Consulting site",
+    "version": "0.2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FrankDraws/git-5apps.com-frankdraws_testdev.git"
+    },
+    "keywords": [],
+    "author": "Frank J. Quinones",
+    "license": "ISC",
+    "homepage": "https://testdev.5apps.com/"
+}

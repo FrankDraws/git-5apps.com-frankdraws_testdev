@@ -57,5 +57,4 @@ Thumbs.d
 
 # Ignore files in this dir except ! - FJQ #
 ###############
-*
 !.gitignore

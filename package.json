@@ -1,7 +1,7 @@
 {
     "name": "testdev",
     "description": "Consulting site",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/FrankDraws/git-5apps.com-frankdraws_testdev.git"

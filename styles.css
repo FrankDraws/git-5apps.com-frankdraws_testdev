@@ -33,15 +33,17 @@ h2 {
   font-weight: 900;
 }
 
-h3 {
-  font-family: "Lora", serif;
+h3,
+h4 {
+  font-family: "Playfair Display SC", serif;
   line-height: 1.3;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 h1,
 h2,
 h3,
+h4,
 p {
   font-size: clamp( var(--fluid-type-min, 1rem), calc(1rem + var(--fluid-type-target, 3vw)), var(--fluid-type-max, 1.3rem));
   margin: 1.4rem 1.5rem 0;
@@ -67,8 +69,14 @@ h3 {
   --fluid-type-max: 2.5rem;
 }
 
+h4 {
+  --fluid-type-min: 1.2rem;
+  --fluid-type-max: 2rem;
+}
+
 h2,
-h3 {
+h3,
+h4 {
   max-width: 30ch;
 }
 
@@ -98,6 +106,7 @@ a,
   h1,
   h2,
   h3,
+  h4,
   p {
     margin: 1.4rem 3rem 0;
   }
@@ -126,7 +135,10 @@ a,
 /* ANIMATION */
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+p {
   -webkit-animation: fade-in-right 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in-right 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }

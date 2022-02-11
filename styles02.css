@@ -33,6 +33,12 @@ body {
   background-color: yellow;
 }
 
+blockquote {
+  border-left: 3px solid #333;
+  padding-left: 1em;
+  color: #777;
+}
+
 
 /* 
 Font Clamp  
@@ -43,7 +49,8 @@ h1,
 h2,
 h3,
 p,
-li {
+li,
+blockquote {
   font-size: clamp( var(--fluid-type-min, 1rem), calc(1rem + var(--fluid-type-target, 3vw)), var(--fluid-type-max, 1.3rem));
   max-width: 60ch;
 }

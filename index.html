@@ -5,34 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5app FJQ</title>
+    <title>Document</title>
 
-    <!-- <link rel="stylesheet" href="node_modules/sscaffold-css/sscaffold.min.css"> -->
-    <!-- <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+        }
+        
+        .container {
+            width: 80vw;
+            height: 100%;
+            /* outline: 1px solid red; */
+            margin: 1em 1em 3em;
+        }
+        
+        .sans {
+            list-style: none;
+        }
+        /* 
+  Font Clamp  
+  https://piccalil.li/tutorial/fluid-typography-with-css-clamp/
+*/
+        
+        h1,
+        h2,
+        h3,
+        p,
+        li {
+            font-size: clamp( var(--fluid-type-min, 1rem), calc(1rem + var(--fluid-type-target, 3vw)), var(--fluid-type-max, 1.3rem));
+            max-width: 60ch;
+        }
+        
+        h1 {
+            --fluid-type-min: 1.5rem;
+            --fluid-type-max: 2.5rem;
+            --fluid-type-target: 5vw;
+            /* max-width: 30ch; */
+        }
+        
+        h2 {
+            --fluid-type-min: 1.8rem;
+            --fluid-type-max: 3rem;
+        }
+        
+        h3 {
+            --fluid-type-min: 1.5rem;
+            --fluid-type-max: 2.5rem;
+        }
+        
+        p,
+        li {
+            /* max-width: 60ch; */
+            line-height: 1.8;
+        }
+        
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="colortop"></div>
-    <section class="">
-        <h1>Frank Juval Quinones</h1>
-        <h4>Design &amp; Front End Consultant</h4>
+    <section class="container">
+        <p>Last update: Feb 10, 2022</p>
+        <p>The information below are things that I'm working on, questions I have, and so forth.</p>
+        <h1>Things To Do</h1>
+        <ul>
+            <li class="sans"><input type="checkbox"> Bylaws</li>
+            <li class="sans"><input type="checkbox"> Narrative of Activities</li>
+        </ul>
 
-        <p class="summary">Entrepreneurial, creative professional full of moxie, with a penchant for knowledge, higher thinking, and systems with twenty-six years of experience in design, brand development, web development, and animation. I’ve developed web presence solutions for
-            major corporations including Marriott, Universal, and NBC. Now I'm putting those years of experience and expertise to work for small businesses.</p>
 
-        <p>Here are some services I can help with:
+        <ul>
+            <li class="sans"> <input type="checkbox"> Organizing document(?)</li>
             <ul>
-                <li>Diagnose and develop solutions for existing website design issues</li>
-                <li>Update and/or improve branding</li>
-                <li>Solve HTML/CSS issues</li>
-                <li>Troubleshoot and develop solutions for design issues with WordPress sites</li>
-                <li>Provide solutions for web animations</li>
-                <!-- <li>Develop solutions for user experience</li> -->
+                <li>Send amendment in to State of Florida (Are there implications for this?).</li>
+                <li>This is prompted by Part III of Form 1023. I think these are the Articles of Incorporation.</li>
+                <li>Articles of Incorporation include the type (charitable org), purpose, and dissolution provisions.</li>
+                <li>Must have IRS approved language in Articles of Incorporation.</li>
             </ul>
-        </p>
+        </ul>
 
-        <p>You can view my <a href="https://www.linkedin.com/in/frankjuval/" target="_blank" rel="noopener" data-title="LinkedIn">resume here</a> and when you're ready <a href="mailto:frankdraws@hey.com">contact me</a> for a free consultation.</p>
+        <ul>
+            <li class="sans"><input type="checkbox"> How to get organized?</li>
+            <ul>
+                <li>We need a system.</li>
+                <li>Keep it as simple as possible.</li>
+                <li>If using tech, try to avoid the cloud. At least large creepy corporations like Google.</li>
+            </ul>
+        </ul>
+
+        <h1>Questions</h1>
+        <p>
+            We are a charitable organization, but are we educational too? Maybe what the IRS defines as educational isn't the same as what we think it is.
+        </p>
+        <p>We will help other nonprofits with funding, as well as collaborate, and assist. How does this affect how we fill out Form 1023?</p>
     </section>
 </body>
 

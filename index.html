@@ -6,72 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body,
-        html {
-            width: 100%;
-            height: 100%;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            display: grid;
-            place-items: center;
-        }
-        
-        .container {
-            width: 80vw;
-            height: 100%;
-            /* outline: 1px solid red; */
-            margin: 1em 1em 3em;
-        }
-        
-        .sans {
-            list-style: none;
-        }
-        /* 
-  Font Clamp  
-  https://piccalil.li/tutorial/fluid-typography-with-css-clamp/
-*/
-        
-        h1,
-        h2,
-        h3,
-        p,
-        li {
-            font-size: clamp( var(--fluid-type-min, 1rem), calc(1rem + var(--fluid-type-target, 3vw)), var(--fluid-type-max, 1.3rem));
-            max-width: 60ch;
-        }
-        
-        h1 {
-            --fluid-type-min: 1.5rem;
-            --fluid-type-max: 2.5rem;
-            --fluid-type-target: 5vw;
-            /* max-width: 30ch; */
-        }
-        
-        h2 {
-            --fluid-type-min: 1.8rem;
-            --fluid-type-max: 3rem;
-        }
-        
-        h3 {
-            --fluid-type-min: 1.5rem;
-            --fluid-type-max: 2.5rem;
-        }
-        
-        p,
-        li {
-            /* max-width: 60ch; */
-            line-height: 1.8;
-        }
-        
-        .highlight {
-            background-color: yellow;
-        }
-    </style>
+    <link rel="stylesheet" href="styles02.css">
 </head>
 
 <body>
